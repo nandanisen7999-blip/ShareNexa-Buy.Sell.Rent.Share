@@ -1,0 +1,422 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #100d20;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    color: #d7c5ff;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+
+/* HEADER */
+header {
+    background: #1c1633;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    color: #c5a7ff;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #b994ff;
+}
+
+header div a {
+    display: inline-block;
+    background: #8b5cf6;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-left: 5px;
+}
+
+
+/* COMMON SECTIONS */
+section {
+    padding: 65px 5%;
+    scroll-margin-top: 85px;
+}
+
+section h2 {
+    font-size: 30px;
+    color: #c5a7ff;
+    margin-bottom: 15px;
+}
+
+section p {
+    color: #d0cadd;
+}
+
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+        <span>✨ Smart Sharing. Better Living!</span>
+
+        <h2>Welcome to <br>ShareNexa</h2>
+
+        <h3>Buy It. Sell It. Rent It. Share It.</h3>
+
+        <p>
+            One platform for buying, selling and renting
+            products with other people.
+        </p>
+
+        <a href="#explore">Explore Products →</a>
+        <a href="#sell">List Your Product</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/Pastel Purple Product Showcase.png"
+             alt="ShareNexa Products">
+    </div>
+
+</section>
+
+
+
+/* CATEGORIES */
+#categories div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#categories div a {
+    background: #251d3d;
+    padding: 14px 25px;
+    border: 1px solid #57417e;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#categories div a:hover {
+    background: #8b5cf6;
+}
+
+
+/* EXPLORE PRODUCTS */
+#explore input,
+#explore select {
+    padding: 12px;
+    margin: 15px 8px 25px 0;
+    background: #251d3d;
+    color: white;
+    border: 1px solid #57417e;
+    border-radius: 8px;
+}
+
+#explore input {
+    width: 260px;
+    max-width: 100%;
+}
+
+#explore select {
+    min-width: 170px;
+}
+
+
+/* PRODUCT CARDS */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background: #211a35;
+    border: 1px solid #49376b;
+    border-radius: 14px;
+    padding: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    border-color: #b994ff;
+    box-shadow: 0 8px 25px rgba(139,92,246,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    color: #e2d5ff;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.product-card button {
+    background: #8b5cf6;
+    color: white;
+    padding: 9px 11px;
+    border-radius: 7px;
+    margin: 5px 3px 0 0;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.product-card button:hover {
+    background: #b994ff;
+    color: #160e2b;
+}
+
+
+/* FORMS */
+form {
+    max-width: 550px;
+    background: #211a35;
+    border: 1px solid #49376b;
+    padding: 25px;
+    border-radius: 14px;
+    margin-top: 20px;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 12px 0;
+    background: #130f23;
+    border: 1px solid #57417e;
+    border-radius: 8px;
+    color: white;
+}
+
+form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    color: #d7c5ff;
+}
+
+form button {
+    background: #8b5cf6;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background: #b994ff;
+    color: #160e2b;
+}
+
+
+/* DASHBOARD */
+#dashboard a {
+    display: inline-block;
+    background: #251d3d;
+    border: 1px solid #57417e;
+    padding: 12px 20px;
+    margin: 10px 8px 0 0;
+    border-radius: 8px;
+}
+
+
+/* MESSAGES */
+#messages {
+    background: #181329;
+}
+
+
+/* ABOUT AND CONTACT */
+#about,
+#contact {
+    background: #181329;
+}
+
+
+/* FOOTER */
+footer {
+    background: #1c1633;
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 1px solid #49376b;
+}
+
+footer h2 {
+    color: #c5a7ff;
+    margin-bottom: 8px;
+}
+
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #home h2 {
+        font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .product-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-card img {
+        height: 130px;
+    }
+}
+
+@media (max-width: 420px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* SHARE NEXA HOME HERO SECTION */
+
+#home.hero {
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 5%;
+    background: linear-gradient(120deg, #f5edff, #e2d0ff);
+    overflow: hidden;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-content h2 {
+    color: #17102d;
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.hero-content h3 {
+    color: #24163e;
+    margin: 15px 0;
+}
+
+.hero-content p {
+    color: #403454;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 480px;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    #home.hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: 240px;
+    }
+}
+/* CENTER LOGIN AND SIGNUP CARDS */
+
+#login,
+#signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#login form,
+#signup form {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    text-align: left;
+}
